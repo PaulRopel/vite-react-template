@@ -4,10 +4,13 @@ WORKDIR /app
 
 COPY package.json yarn.lock ./
 
+RUN yarn install --frozen-lockfile
+
+COPY . ./
+
 ARG VITE_SERVER_URL
 
-RUN yarn install --frozen-lockfile && \
-    yarn run build
+RUN yarn run build
 
 FROM caddy:latest
 
