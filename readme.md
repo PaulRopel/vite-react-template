@@ -7,6 +7,7 @@ tags:
   - react
 ---
 
+
 # Vite + React + Caddy
 
 This is a [Vite + React](https://vitejs.dev/guide/#trying-vite-online) starter that uses [Caddy](https://caddyserver.com/).
